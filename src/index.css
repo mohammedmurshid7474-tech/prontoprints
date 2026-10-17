@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-orange: #FF5A00;
+    --brand-orange-hover: #E04E00;
+    --brand-dark: #121316;
+    --brand-slate: #1E2128;
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* 3D Mockup Perspective & Shadows */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1500 {
+  perspective: 1500px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Realistic Paper Depth & Texture Shadows */
+.shadow-print-card {
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.06),
+    0 10px 25px -5px rgba(0, 0, 0, 0.18),
+    0 20px 35px -10px rgba(0, 0, 0, 0.12);
+}
+
+.shadow-card-stack {
+  box-shadow: 
+    2px 2px 0 #e2e8f0,
+    4px 4px 0 #cbd5e1,
+    6px 6px 0 #94a3b8,
+    0 20px 25px -5px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-folded-left {
+  box-shadow: 
+    -4px 6px 15px rgba(0, 0, 0, 0.15),
+    inset -10px 0 15px -10px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-folded-right {
+  box-shadow: 
+    4px 6px 15px rgba(0, 0, 0, 0.15),
+    inset 10px 0 15px -10px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtle print paper texture sheen overlay */
+.sheen-matte {
+  background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.06) 100%);
+}
+
+.sheen-gloss {
+  background: linear-gradient(115deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 40%, rgba(255,255,255,0) 65%, rgba(0,0,0,0.08) 100%);
+}
+
+.sheen-foil {
+  background: linear-gradient(110deg, rgba(255,215,0,0.3) 0%, rgba(255,255,255,0.6) 35%, rgba(255,215,0,0.2) 60%, rgba(218,165,32,0.4) 100%);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
